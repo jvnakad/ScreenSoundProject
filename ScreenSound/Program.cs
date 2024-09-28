@@ -21,7 +21,7 @@ internal class Program
         opcoes.Add(3, new MenuMostrarBandas());
         opcoes.Add(4, new MenuAvaliarBanda());
         opcoes.Add(5, new MenuExibirDetalhes());
-        opcoes.Add(6, new MenuSair());
+        opcoes.Add(0, new MenuSair());
 
         void ExibirLogo()
         {
@@ -55,7 +55,7 @@ internal class Program
             {
                 Menu menuASerExibido = opcoes[opcaoEscolhidaNumerica];
                 menuASerExibido.Executar(bandasRegistradas);
-                if(opcaoEscolhidaNumerica >= 0) ExibirOpcoesDoMenu();
+                if(opcaoEscolhidaNumerica > 0) ExibirOpcoesDoMenu();
             } 
             else
             {

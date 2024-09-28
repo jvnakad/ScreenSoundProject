@@ -1,10 +1,11 @@
-﻿
+﻿using ScreenSound.Modelos;
+
 namespace ScreenSound.Menus;
 
 internal class MenuSair : Menu
 {
-    internal void Executar()
+    public override void Executar(Dictionary<string, Banda> bandasRegistradas)
     {
-        Console.WriteLine("Até logo 0/");
+        Console.WriteLine("Tchau tchau :)");
     }
 }
